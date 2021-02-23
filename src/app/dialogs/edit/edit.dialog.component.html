@@ -5,7 +5,7 @@
 
     <div class="form">
       <mat-form-field color="accent">
-        <input matInput #input class="form-control" placeholder="Código" [(ngModel)]="data.code" name="code" maxlength="12" required >
+        <input matInput #input class="form-control" placeholder="Código" [(ngModel)]="data.code" name="code" maxlength="12" readonly required >
         <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
         <mat-hint align="end">{{inputstate.value?.length || 0}}/12</mat-hint>
       </mat-form-field>
